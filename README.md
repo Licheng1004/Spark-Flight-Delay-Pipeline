@@ -1,3 +1,5 @@
+[![CI/CD](https://github.com/Licheng1004/Spark-Flight-Delay-Pipeline/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Licheng1004/Spark-Flight-Delay-Pipeline/actions/workflows/ci.yml)
+
 # Spark Flight-Delay Data Preparation
 
 A PySpark DataFrame pipeline that cleans flight and weather records, joins weather observations around departure and arrival times, and builds a monthly flight-level joint table. The final workflow also includes the report's simple downstream Spark ML baseline.
@@ -43,3 +45,7 @@ Start Jupyter from the repository root. Run the three notebooks in pipeline orde
 
 - [Final report (Markdown)](report/final_report.md)
 - [Final report (PDF)](report/final_report.pdf)
+
+## CI/CD
+
+The GitHub Actions workflow runs on pushes to `main`, pull requests, and manual dispatch. It validates all project notebooks and starts local Spark for a tiny DataFrame smoke check; it does not need the course data bundle. On a `v*` tag, it also publishes a GitHub Release with the source snapshot and the final report deliverables.
