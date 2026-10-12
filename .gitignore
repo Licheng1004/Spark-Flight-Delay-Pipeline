@@ -1,0 +1,11 @@
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+.venv/
+/data/
+.sparkStaging/
+metastore_db/
+spark-warehouse/
+
+/outputs/*
+!/outputs/.gitkeep
